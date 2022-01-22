@@ -16,7 +16,7 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+//closure gives nestedFunction access to outerfunction scope(myFunction), so it can reach out of its scope and grab anything in myFunction scope
 
 
 
@@ -28,10 +28,18 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
-  }
+function summation(num){
+  let a =[];
+  a.push(num);
+   while(num >= 1){
+     num = num - 1;
+     a.push(num);
+   }
+   const reducer = (previousValue, currentValue) => previousValue + currentValue;
+   return a.reduce(reducer)
+}
+   
+ console.log(summation(4));  
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
@@ -56,8 +64,10 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(array,element){
+    let dp = []
+
+
   }
   
 
@@ -101,9 +111,14 @@ const zooAnimals = [
     * The consume function should return the invocation of cb, passing a and b into cb as arguments
   */
 
-  function consume(/*Your Code Here */){
-    /*Your Code Here */
-  }
+  function consume(a,b,cb){ 
+    function cb(a,b){
+
+    }
+
+    }
+  
+  
  
   
   /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
