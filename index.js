@@ -87,7 +87,7 @@ const zooAnimals = [
   }
   
   
-  /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
+  /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁mm
   The zoo is concerned about animals with a lower population count. 
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
   */
